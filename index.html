@@ -11,15 +11,23 @@
   <img src="twitter_logo.png"><br>
   <center><button class = "loadButton">Click here to load new tweets</button></center>
     <script>
-      $(document).ready(function(){
+      $(document).ready(function() {
         var $body = $('body');
-        var loadNewTweets = function (){
-          $("div").remove();
+        var loadNewTweets = function () {
+          $(".tweet").remove();
           var index = streams.home.length - 1;
-          while(index >= 0){
+          while (index >= 0) {
             var tweet = streams.home[index];
-            var $tweet = $('<div></div>');
-            $tweet.text('@' + tweet.user + ': ' + tweet.message + ' ' + tweet.created_at);
+            var $tweet = $('<div class="tweet"></div>');
+            var $tweetUser = $('<p class="tweetUser ' + tweet.user + '"></p>');
+            var $tweetCreatedAt = $('<p class="tweetCreatedAt"></p>');
+            var $tweetMessage = $('<p class="tweetMessage"></p>');
+            $tweetUser.text('@' + tweet.user + ':');
+            $tweetCreatedAt.text(tweet.created_at);
+            $tweetMessage.text(tweet.message);
+            $tweetUser.appendTo($tweet);
+            $tweetCreatedAt.appendTo($tweet);
+            $tweetMessage.appendTo($tweet);
             $tweet.appendTo($body);
             index --;
           }
