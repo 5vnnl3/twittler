@@ -8,8 +8,8 @@
     <script src="data_generator.js"></script>
   </head>
   <body>
-  <h1>Twittler</h1><BR>
-  <button class = "button" type="button">Load New Tweets</button>
+  <img src="twitter_logo.png"><br>
+  <center><button class = "loadButton">Click here to load new tweets</button></center>
     <script>
       $(document).ready(function(){
         var $body = $('body');
@@ -25,7 +25,7 @@
           }
         }
         loadNewTweets();
-        $($body).on('click',".button", loadNewTweets);
+        $($body).on('click',".loadButton", loadNewTweets);
         // setInterval(loadNewTweets, 5000); --> load tweets automatically
       });
     </script>

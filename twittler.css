@@ -1,6 +1,32 @@
 body{
 font-family: Helvetica, Arial, sans-serif;
-font-size: 14px;
-color: #333;
-background-color: #00b2ee;
+color: #000000;
+background-color: #FFFFFF;
+border-left: 300px solid #D3D3D3;
+border-right: 300px solid #D3D3D3;
+margin: 0px;
+}
+img {
+display: block;
+margin-left: auto;
+margin-right: auto
+}
+div {
+text-align: center;
+margin: 10px auto;
+width: 475px;
+padding: 5px 15px 10px 15px;
+border-bottom: 2px solid #D3D3D3;
+color:#00CDFF;
+}
+button {
+text-align: center;
+width: 510px;
+margin: 10px auto;
+padding: 5px;
+border-radius: 25px;
+border: none;
+background-color: #00CDFF;
+color: #FFFFFF;
+font-size: 24px;
 }
