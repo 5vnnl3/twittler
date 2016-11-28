@@ -1,46 +1,51 @@
 body {
-font-family: Helvetica, Arial, sans-serif;
-color: #000000;
-background-color: #FFFFFF;
-border-left: 300px solid #D3D3D3;
-border-right: 300px solid #D3D3D3;
-margin: 0px;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #000000;
+	background-color: #FFFFFF;
+	border-left: 300px solid #D3D3D3;
+	border-right: 300px solid #D3D3D3;
+	margin: 0px;
 }
 img {
-display: block;
-margin-left: auto;
-margin-right: auto
+	display: block;
+	margin-left: auto;
+	margin-right: auto
 }
 button {
-text-align: center;
-width: 510px;
-margin: 10px auto;
-padding: 5px;
-border-radius: 25px;
-border: none;
-background-color: #00CDFF;
-color: #FFFFFF;
-font-size: 24px;
+	text-align: center;
+	width: 510px;
+	margin: 10px auto;
+	padding: 5px;
+	border-radius: 25px;
+	border: none;
+	background-color: #00CDFF;
+	color: #FFFFFF;
+	font-size: 24px;
 }
 .tweet {
-text-align: center;
-color: #00CDFF;
-margin: 10px auto;
-width: 490px;
-padding: 0px 10px 0px 10px;
-border-bottom: 2px solid #D3D3D3;
+	text-align: center;
+	color: #00CDFF;
+	margin: 10px auto;
+	width: 490px;
+	padding: 10px 10px 0px 10px;
+	border-bottom: 2px solid #D3D3D3;
 }
-.tweetUser {
-float: left;
-color: #C0C0C0;
+.user {
+	float: left;
+	color: #C0C0C0;
 }
-.tweetCreatedAt {
-float: right;
-color: #C0C0C0;
+.user:hover {
+	font-style: italic;
+	cursor: pointer;
 }
-.tweetMessage {
-clear: both;
-text-align: left;
-font-size: 24px;
-color: #00CDFF;
+.createdAt {
+	float: right;
+	color: #C0C0C0;
+}
+.msg {
+	clear: both;
+	text-align: left;
+	font-size: 24px;
+	color: #00CDFF;
+	padding: 5px 0px -0px 0px;
 }
