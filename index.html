@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="twittler.css">
     <script src="jquery.js"></script>
     <script src="data_generator.js"></script>
+    <script src="jquery.timeago.js"></script>
   </head>
   <body>
   <br>
@@ -24,7 +25,7 @@
             var $createdAt = $('<span class="createdAt"></span>');
             var $msg = $('<p class="msg"></p>');
             $user.text('@' + tweet.user + ':');
-            $createdAt.text(tweet.created_at);
+            $createdAt.text(jQuery.timeago(tweet.created_at));
             $msg.text(tweet.message);
             $user.appendTo($tweet);
             $createdAt.appendTo($tweet);

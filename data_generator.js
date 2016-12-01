@@ -47,7 +47,7 @@ var generateRandomTweet = function(){
   var tweet = {};
   tweet.user = randomElement(users);
   tweet.message = randomMessage();
-  tweet.created_at = new Date().toLocaleTimeString("en-us", options);
+  tweet.created_at = new Date();
   addTweet(tweet);
 };
 
